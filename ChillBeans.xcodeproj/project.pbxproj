@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB07ECC327792FB600C72979 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07ECC227792FB600C72979 /* MenuSection.swift */; };
 		BB6A5B322779084F0069C88D /* ChillBeansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B312779084F0069C88D /* ChillBeansApp.swift */; };
 		BB6A5B342779084F0069C88D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B332779084F0069C88D /* ContentView.swift */; };
 		BB6A5B36277908570069C88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6A5B35277908570069C88D /* Assets.xcassets */; };
 		BB6A5B39277908570069C88D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6A5B38277908570069C88D /* Preview Assets.xcassets */; };
+		BB6A5B40277909200069C88D /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6A5B3F277909200069C88D /* menu.json */; };
+		BB6A5B4227790F9B0069C88D /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B4127790F9B0069C88D /* Drink.swift */; };
+		BB6A5B46277910250069C88D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B45277910250069C88D /* Menu.swift */; };
+		BB6A5B48277912470069C88D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B47277912470069C88D /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB07ECC227792FB600C72979 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		BB6A5B2E2779084F0069C88D /* ChillBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChillBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6A5B312779084F0069C88D /* ChillBeansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillBeansApp.swift; sourceTree = "<group>"; };
 		BB6A5B332779084F0069C88D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB6A5B35277908570069C88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6A5B38277908570069C88D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB6A5B3F277909200069C88D /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		BB6A5B4127790F9B0069C88D /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		BB6A5B45277910250069C88D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		BB6A5B47277912470069C88D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				BB6A5B312779084F0069C88D /* ChillBeansApp.swift */,
+				BB6A5B3F277909200069C88D /* menu.json */,
+				BB6A5B47277912470069C88D /* MenuView.swift */,
+				BB07ECC227792FB600C72979 /* MenuSection.swift */,
+				BB6A5B4127790F9B0069C88D /* Drink.swift */,
+				BB6A5B45277910250069C88D /* Menu.swift */,
 				BB6A5B332779084F0069C88D /* ContentView.swift */,
 				BB6A5B35277908570069C88D /* Assets.xcassets */,
 				BB6A5B37277908570069C88D /* Preview Content */,
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6A5B40277909200069C88D /* menu.json in Resources */,
 				BB6A5B39277908570069C88D /* Preview Assets.xcassets in Resources */,
 				BB6A5B36277908570069C88D /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6A5B342779084F0069C88D /* ContentView.swift in Sources */,
+				BB6A5B48277912470069C88D /* MenuView.swift in Sources */,
+				BB6A5B4227790F9B0069C88D /* Drink.swift in Sources */,
 				BB6A5B322779084F0069C88D /* ChillBeansApp.swift in Sources */,
+				BB07ECC327792FB600C72979 /* MenuSection.swift in Sources */,
+				BB6A5B46277910250069C88D /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
