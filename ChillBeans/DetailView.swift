@@ -18,6 +18,7 @@ struct DetailView: View {
     @State private var extraShots = 0
     @State private var milk = ConfigOptions.none
     @State private var syrup = ConfigOptions.none
+    @State private var isFirst = true
     
     
     let sizeOptions = ["Short", "Tall", "Grande"]
@@ -95,6 +96,16 @@ struct DetailView: View {
                 
                 dismiss()
             }
+        }
+        .onAppear {
+            guard isFirst else {
+                return
+            }
+            
+            if drink.servedWithMilk {
+                milk = menu.milkOptions[1]
+            }
+            isFirst = false
         }
     }
 }
