@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ServingDrink: Identifiable, Codable {
+struct ServingDrink: Identifiable, Codable, Equatable {
     var id: UUID
     let name: String
     let description: String

@@ -62,4 +62,17 @@ class Storage: ObservableObject {
         save()
     }
     
+    func reorder(serving: ServingDrink) {
+        var copy = serving
+        copy.id = UUID()
+        servings.insert(copy, at: 0)
+        save()
+    }
+    
+    func delete(serving: ServingDrink) {
+        if let index = servings.firstIndex(of: serving) {
+            servings.remove(at: index)
+            save()
+        }
+    }
 }
