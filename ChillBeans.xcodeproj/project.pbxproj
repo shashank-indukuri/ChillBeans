@@ -18,6 +18,9 @@
 		BB6A5B46277910250069C88D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B45277910250069C88D /* Menu.swift */; };
 		BB6A5B48277912470069C88D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A5B47277912470069C88D /* MenuView.swift */; };
 		BBCA0193277B883500EA81A2 /* ConfigOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA0192277B883500EA81A2 /* ConfigOptions.swift */; };
+		BBCA0195277B9F8100EA81A2 /* ServingDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA0194277B9F8100EA81A2 /* ServingDrink.swift */; };
+		BBCA0197277B9FE200EA81A2 /* FileManager_Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA0196277B9FE200EA81A2 /* FileManager_Dir.swift */; };
+		BBCA0199277BA03400EA81A2 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA0198277BA03400EA81A2 /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		BB6A5B45277910250069C88D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		BB6A5B47277912470069C88D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BBCA0192277B883500EA81A2 /* ConfigOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigOptions.swift; sourceTree = "<group>"; };
+		BBCA0194277B9F8100EA81A2 /* ServingDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServingDrink.swift; sourceTree = "<group>"; };
+		BBCA0196277B9FE200EA81A2 /* FileManager_Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager_Dir.swift; sourceTree = "<group>"; };
+		BBCA0198277BA03400EA81A2 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				BB6A5B312779084F0069C88D /* ChillBeansApp.swift */,
 				BB6A5B3F277909200069C88D /* menu.json */,
 				BB6A5B47277912470069C88D /* MenuView.swift */,
+				BBCA0194277B9F8100EA81A2 /* ServingDrink.swift */,
+				BBCA0196277B9FE200EA81A2 /* FileManager_Dir.swift */,
+				BBCA0198277BA03400EA81A2 /* Storage.swift */,
 				BB07ECC42779355100C72979 /* DetailView.swift */,
 				BB07ECC227792FB600C72979 /* MenuSection.swift */,
 				BB6A5B4127790F9B0069C88D /* Drink.swift */,
@@ -160,7 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBCA0193277B883500EA81A2 /* ConfigOptions.swift in Sources */,
+				BBCA0199277BA03400EA81A2 /* Storage.swift in Sources */,
+				BBCA0195277B9F8100EA81A2 /* ServingDrink.swift in Sources */,
 				BB6A5B342779084F0069C88D /* ContentView.swift in Sources */,
+				BBCA0197277B9FE200EA81A2 /* FileManager_Dir.swift in Sources */,
 				BB6A5B48277912470069C88D /* MenuView.swift in Sources */,
 				BB6A5B4227790F9B0069C88D /* Drink.swift in Sources */,
 				BB07ECC52779355100C72979 /* DetailView.swift in Sources */,

@@ -11,6 +11,7 @@ struct DetailView: View {
     let drink: Drink
     
     @EnvironmentObject var menu: Menu
+    @EnvironmentObject var storage: Storage
     @State private var index = 0
     @State private var isDecaffe = false
     @State private var extraShots = 0
@@ -87,6 +88,11 @@ struct DetailView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(drink.name)
+        .toolbar {
+            Button("Save") {
+                storage.add(drink: drink, size: sizeOptions[index], extraShots: extraShots, isDecaffe: isDecaffe, milk: milk, syrup: syrup, caffeine: caffeine, calories: calories)
+            }
+        }
     }
 }
 
