@@ -101,7 +101,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(drink: Drink.example) {}
+        DetailView(drink: Drink.example) { }
         .environmentObject(Menu())
     }
 }
