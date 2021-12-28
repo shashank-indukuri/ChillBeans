@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     let drink: Drink
+    let dismiss: () -> Void
     
     @EnvironmentObject var menu: Menu
     @EnvironmentObject var storage: Storage
@@ -91,6 +92,8 @@ struct DetailView: View {
         .toolbar {
             Button("Save") {
                 storage.add(drink: drink, size: sizeOptions[index], extraShots: extraShots, isDecaffe: isDecaffe, milk: milk, syrup: syrup, caffeine: caffeine, calories: calories)
+                
+                dismiss()
             }
         }
     }
@@ -98,6 +101,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(drink: Drink.example)
+        DetailView(drink: Drink.example) {}
+        .environmentObject(Menu())
     }
 }
