@@ -24,8 +24,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 if storage.servings.isEmpty {
-                    Button("Add your first drink") {
+                    Button {
                         displayMenu = true
+                    } label: {
+                        Label("Add Your First Drink", systemImage: "cart.fill")
                     }
                 } else {
                     Section("Summary") {
