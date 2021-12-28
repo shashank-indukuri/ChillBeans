@@ -18,8 +18,8 @@ class Menu: ObservableObject, Codable {
             let data = try Data(contentsOf: url)
             let menu = try JSONDecoder().decode(Menu.self, from: data)
             sections = menu.sections
-            milkOptions = menu.milkOptions
-            syrupOptions = menu.syrupOptions
+            milkOptions.append(contentsOf: menu.milkOptions)
+            syrupOptions.append(contentsOf: menu.syrupOptions)
         } catch {
             fatalError("Menu couldn't load. Please try again...")
         }
