@@ -9,17 +9,40 @@ import SwiftUI
 
 struct DetailView: View {
     let drink: Drink
+    
+    @EnvironmentObject var menu: Menu
     @State private var index = 0
     @State private var isDecaffe = false
+    @State private var extraShots = 0
+    @State private var milk = ConfigOptions.none
+    @State private var syrup = ConfigOptions.none
+    
     
     let sizeOptions = ["Short", "Tall", "Grande"]
     
     var caffeine: Int {
-        100
+        var caffeineAmount = drink.caffeine[index]
+        caffeineAmount += (extraShots * 60)
+
+        if isDecaffe {
+            caffeineAmount /= 20
+        }
+
+        return caffeineAmount
     }
-    
+
     var calories: Int {
-        100
+        var calorieAmount = drink.baseCalories
+        calorieAmount += extraShots * 10
+
+        if drink.coffeeBased {
+            calorieAmount += milk.calories
+        } else {
+            calorieAmount += milk.calories / 8
+        }
+
+        calorieAmount += syrup.calories
+        return calorieAmount * (index + 1)
     }
     
     var body: some View {
@@ -31,13 +54,39 @@ struct DetailView: View {
                     }
                 }
                 .pickerStyle(.segmented)
+                
+                if drink.coffeeBased {
+                    Stepper("Extra shots: \(extraShots)", value: $extraShots, in: 0...8)
+                }
+                
                 Toggle("Dacaffeinated", isOn: $isDecaffe)
             }
+            
+            Section("Customizations") {
+                Picker("Milk", selection: $milk) {
+                    ForEach(menu.milkOptions) { option in
+                        Text(option.name)
+                            .tag(option)
+                    }
+                }
+
+                if drink.coffeeBased {
+                    Picker("Syrup", selection: $syrup) {
+                        ForEach(menu.syrupOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
+                    }
+                }
+            }
+            
             Section("Estimates") {
                 Text("**Caffeine**: \(caffeine) mg")
                 Text("**Calories**: \(calories)")
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(drink.name)
     }
 }
 
