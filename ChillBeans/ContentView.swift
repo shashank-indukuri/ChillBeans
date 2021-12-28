@@ -59,6 +59,7 @@ struct ContentView: View {
                             } label: {
                                 Label("Reorder", systemImage: "repeat")
                             }
+                            .tint(.blue)
                         }
                     }
                 }
