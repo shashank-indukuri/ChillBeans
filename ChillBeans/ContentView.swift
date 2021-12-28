@@ -12,6 +12,14 @@ struct ContentView: View {
     @StateObject var storage = Storage()
     @State private var displayMenu = false
     
+    var totalCaffeine: Int {
+        storage.servings.map(\.caffeine).reduce(0, +)
+    }
+    
+    var totalCalories: Int {
+        storage.servings.map(\.calories).reduce(0, +)
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -20,6 +28,10 @@ struct ContentView: View {
                         displayMenu = true
                     }
                 } else {
+                    Section("Summary") {
+                        Text("**Caffeine**: \(totalCaffeine)mg")
+                        Text("**Calories**: \(totalCalories)")
+                    }
                     ForEach(storage.servings) { serving in
                         HStack {
                             VStack(alignment: .leading) {
