@@ -18,6 +18,7 @@ This project was built using these technologies.
 
 - Swift Programming language
 - Swift UI
+- Search Implementation
 - Xcode
 
 ## Getting Started
