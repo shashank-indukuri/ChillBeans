@@ -1,5 +1,5 @@
 <h2 align="center">
-  Chill Beans
+  Chill Beans!
 </h2>
 
 <br/>
@@ -16,10 +16,10 @@ Chill Beans which features categories of drinks and add a drink to my list. It k
 
 This project was built using these technologies.
 
-- Swift Programming language
+- Swift 5.5
 - Swift UI
 - Search Implementation
-- Xcode
+- Xcode 13
 
 ## Getting Started
 
