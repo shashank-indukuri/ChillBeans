@@ -21,6 +21,10 @@ This project was built using these technologies.
 - Search Implementation
 - Xcode 13
 
+Features.
+
+- Tracking of Caffeine and Calories of consumed beverages
+
 ## Getting Started
 
 Clone down this repository. Open with Xcode and click cmd + R to build and run the project
