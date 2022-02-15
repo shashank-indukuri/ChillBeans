@@ -1,5 +1,5 @@
 <h2 align="center">
-  Chill Beans
+  Chill Beans.
 </h2>
 
 <br/>
