@@ -20,9 +20,10 @@ struct DetailView: View {
     @State private var syrup = ConfigOptions.none
     @State private var isFirst = true
     
-    
+    // Size options
     let sizeOptions = ["Short", "Tall", "Grande"]
     
+    // Computed property to calculate caffeine
     var caffeine: Int {
         var caffeineAmount = drink.caffeine[index]
         caffeineAmount += (extraShots * 60)
@@ -34,6 +35,7 @@ struct DetailView: View {
         return caffeineAmount
     }
 
+    // Computed property to calculate  calories
     var calories: Int {
         var calorieAmount = drink.baseCalories
         calorieAmount += extraShots * 10

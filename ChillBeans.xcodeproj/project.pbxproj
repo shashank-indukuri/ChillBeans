@@ -83,7 +83,6 @@
 				BB6A5B45277910250069C88D /* Menu.swift */,
 				BBCA0192277B883500EA81A2 /* ConfigOptions.swift */,
 				BB6A5B332779084F0069C88D /* ContentView.swift */,
-				BB6A5B35277908570069C88D /* Assets.xcassets */,
 				BB6A5B37277908570069C88D /* Preview Content */,
 			);
 			path = ChillBeans;
@@ -92,6 +91,7 @@
 		BB6A5B37277908570069C88D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				BB6A5B35277908570069C88D /* Assets.xcassets */,
 				BB6A5B38277908570069C88D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
