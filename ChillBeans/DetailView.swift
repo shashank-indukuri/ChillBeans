@@ -50,7 +50,7 @@ struct DetailView: View {
         return calorieAmount * (index + 1)
     }
     
-    // View
+    // Detail view
     var body: some View {
         Form {
             Section("Basic Options") {
